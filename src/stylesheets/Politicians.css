@@ -1,0 +1,14 @@
+.politicians-container{
+  margin: 1rem 10rem;
+}
+.list-container span {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  text-align: center;
+}
+.btn {
+  width:15rem;
+  text-align: center;
+}

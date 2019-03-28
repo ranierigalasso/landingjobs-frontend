@@ -1,23 +1,27 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './pages/Home';
-import Detail from './pages/Detail';
-import NewPhone from './pages/NewPhone';
-import Edit from './pages/Edit';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+import Header from './components/Header';
+import Politicians from './pages/Politicians';
+import Details from './pages/Details';
+import Create from './pages/Create';
 
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/phones/new' component={NewPhone} />
-          <Route path='/phones/:id/edit' component={Edit} />
-          <Route path='/phones/:id' component={Detail} />
-        </Switch>
-      </Router>
+      <div>
+        <Header/>
+        <Router>
+          <Switch>
+            <Route exact path='/' component={Politicians}/>
+            <Route path='/create' component={Create} />
+            <Route path='/:id' component={Details}/>
+          </Switch>
+        </Router>
+      </div>
     );
   }
 }
