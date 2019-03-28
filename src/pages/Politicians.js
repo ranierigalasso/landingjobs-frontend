@@ -75,29 +75,7 @@ class Politicians extends Component {
     )
   }
 
-
-  //-------------------------------------------------------------------------------
-
-  // reassignSperior = () => {
-  //   const { politicians, politiciansJail } = this.state;
-  //   politiciansJail.map((politician) => {
-  //     if(politician.subordinates.length === 0) { // If politician is the bottom and has no subordinate
-
-  //     } else if(politician.superiorId === undefined) { ///If politician is the head
-  //       const subordinatesList = [];
-  //       subordinatesList.push(politician.subordinates);
-  //       //check oldest subordinate ///sort
-        
-  //       console.log(subordinatesList)
-  //     } else { //All other cases
-
-  //     }
-  //   })
-  // }
-  //-------------------------------------------------------------------------------
-
   render() {
-    console.log(this.state)
     return (
       <div className="list-group politicians-container">
         <div style={{display:'flex', justifyContent: 'space-around'}}>
